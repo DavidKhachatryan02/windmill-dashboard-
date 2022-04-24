@@ -11,7 +11,7 @@ import {
   Input,
   Label
 } from "@windmill/react-ui";
-import ModalToAdd from "../components/ModalToAdd";
+
 import PageTitle from "../components/Typography/PageTitle";
 import {
   TableBody,
