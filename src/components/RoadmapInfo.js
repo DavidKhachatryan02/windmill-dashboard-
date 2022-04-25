@@ -42,7 +42,7 @@ function RoadmapInfo(props) {
               style={{ width: "180px" }}
             >
               <Button
-                onClick={() => props.editClick.onClick(number, post)}
+                onClick={() => props.editClick(post)}
                 layout="link"
                 size="icon"
                 aria-label="Edit"
@@ -60,7 +60,7 @@ function RoadmapInfo(props) {
               <Button
                 layout="link"
                 size="small"
-                onClick={() => props.detailClick.onClick(number, post)}
+                onClick={() => props.detailClick(post)}
               >
                 More Info
               </Button>
