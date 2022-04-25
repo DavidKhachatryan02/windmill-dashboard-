@@ -11,9 +11,9 @@ function RoadmapInfo(props) {
             <div className="flex items-center text-sm">
               <div>
                 <p
-                  className="font-semibold"
+                  className="font-semibold "
                   style={{
-                    width: "200px",
+                    width: "140px",
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
