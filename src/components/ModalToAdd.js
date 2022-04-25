@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SectionTitle from "../components/Typography/SectionTitle";
 import { Modal, ModalHeader, ModalFooter, Button } from "@windmill/react-ui";
 
-function ModalToAdd({ closeModal, openModal, addNewPost, isModalOpen }) {
+function ModalToAdd({ closeModal, addNewPost, isModalOpen }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
@@ -15,8 +15,7 @@ function ModalToAdd({ closeModal, openModal, addNewPost, isModalOpen }) {
         description,
         category,
       });
-    }
-    else{
+    } else {
       setErrorMessage("Please fill all the fields");
     }
   };
@@ -42,7 +41,10 @@ function ModalToAdd({ closeModal, openModal, addNewPost, isModalOpen }) {
           onChange={(e) => setTitle(e.target.value)}
           type="text"
           id="title"
-          className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+          className=" rounded-lg border-transparent flex-1 
+              appearance-none border border-gray-300 w-full py-2 px-4 bg-white 
+             text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none
+             focus:ring-2 focus:ring-purple-600 focus:border-transparent"
           name="title"
         />
       </div>
@@ -58,7 +60,9 @@ function ModalToAdd({ closeModal, openModal, addNewPost, isModalOpen }) {
           onChange={(e) => setDescription(e.target.value)}
         ></textarea>
       </label>
-      {!!errorMessage && <label className="text-red-500 pt-2">{errorMessage}</label>}
+      {!!errorMessage && (
+        <label className="text-red-500 pt-2">{errorMessage}</label>
+      )}
       <ModalFooter>
         <div className="hidden sm:block">
           <Button layout="outline" onClick={closeModal}>

@@ -90,7 +90,10 @@ function RoadMap() {
   return (
     <>
       <PageTitle>RoadMap</PageTitle>
-      <Button onClick={openModal} justify="center">
+      <Button
+        onClick={openModal}
+        style={{ marginBottom: "15px", justify: "center" }}
+      >
         Add Level
       </Button>
       <TableContainer>
@@ -101,7 +104,7 @@ function RoadMap() {
             </tr>
             <ModalToAdd
               addNewPost={addNewPost}
-              openModal={openModal}
+              openSModal={openModal}
               closeModal={closeModal}
               isModalOpen={isModalOpen}
             />

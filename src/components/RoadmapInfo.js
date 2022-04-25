@@ -10,7 +10,15 @@ function RoadmapInfo(props) {
           <TableCell>
             <div className="flex items-center text-sm">
               <div>
-                <p className="font-semibold">
+                <p
+                  className="font-semibold"
+                  style={{
+                    width: "200px",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                >
                   {number + 1}.{post?.title}
                 </p>
               </div>
@@ -26,7 +34,7 @@ function RoadmapInfo(props) {
           <TableCell>
             <h1
               style={{
-                width: "200px",
+                width: "150px",
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
